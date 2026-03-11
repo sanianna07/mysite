@@ -2,7 +2,15 @@
 <html>
 <head>
   <title>Sani Website</title>
-
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "4d269aec-c887-4f77-b055-ab7834e98447",
+    });
+  });
+</script>
 </head>
 
 
